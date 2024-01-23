@@ -1,0 +1,74 @@
+/* CSS Syntax 
+
+selector {
+    property1: value;
+    property2: value;
+}
+
+main selectors: element, class, id
+
+any html element can be used as a selector, and the css will apply to all elements of that type. Element css will be overwritten by class or id
+any class needs to have '.' before the name. Eg .classname{}, class allows for classifications of groups
+    you can assign multiple classes to a section by using a space between eg <button class = "btn btn-1" 
+    is both the btn and btn-1 and gets both the css. Similar to inheritance
+any id is unique, can only have one. Need to use '#' before name. Eg #idname()
+
+Multiple classes can have same css without space .class1.class2
+
+Acestor child css relationships. 
+    .ancestor .child {}. Relates to all html examples where <ancestor> <child></child> </ancestor>
+
+2 classes with same formatting use ', space' to show two seperate selectors
+
+* everything selector, for fonts etc
+*/
+
+/* color
+rgba(red,green,blue,TRANSPARENCY FROM 0 TO 1)
+just type color: blue then change to what u need
+transparency very important
+*/
+
+/* boxes
+height, width is inner content
+padding is inside cushion of whitespace
+border is thichness 
+margin is outside cushion of whitespace
+*/
+
+/* fonts from google 
+find fonts you want from google fonts 
+Add to family 
+Click boxes in top right to view family of fonts 
+Copy html import code into the head of html page
+Copy css rules to specify fonts
+
+Use this when specifying
+font-family: 'Roboto', sans-serif;
+
+text-align property are left, right and centre.
+
+*/
+
+
+/* display: flex property is used to create a flexible box with images and fonts. 
+The property flex-wrap: wrap will wrap all the elements and stop them from 
+overflowing off the screen 
+
+justify-content will set the content with even spacing between all the elements. 
+Restrict the size of all <img> elements by setting height 
+property. If this size is not restricted, the elements will be shown according to the original size of the 
+embedded images. 
+
+*/
+
+.inner img {
+     height: 40vh; /*vh means visible height, eg the % of the screen that can be seen at any point in time */
+}
+
+
+.outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

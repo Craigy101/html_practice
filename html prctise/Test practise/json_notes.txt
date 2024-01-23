@@ -1,0 +1,31 @@
+JSON can't have comments so I'm making some notes here.
+
+JavaScript Object Notation 
+
+A way to represent data respresentation. Used bc it is a small file size to send back and forth
+    - Integrates nicely with js 
+
+Important: Most languages have a library/functions to pass json data into objects 
+
+Take the form: 
+
+MUST USE "" for keys, unlike js don't need. Access elemnts like any data type standard
+{
+    "key": "value", 
+    "key2": 3
+    "friends": [{
+        "name: "Joey",
+        "favouriteNumber": 3
+    },
+    {
+        "name: "Grant",
+        "favouriteNumber": 3
+    },
+    ]
+}
+
+Create a object from the string returned 
+JSON.parse(string_version_JSON)
+
+Make it look easy to read
+JSON.prettify(return)

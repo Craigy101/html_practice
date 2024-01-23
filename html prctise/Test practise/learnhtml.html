@@ -1,0 +1,157 @@
+<!-- Toggle comments on mac = Cmd + '/' -->
+<!-- Toggle Code Formatter = Shift + Alt + F -->
+
+<!-- <head> contains all the metadata that the site needs to know. eg <title> appears on tab
+         <meta> name = "description" content ="Website info" the content is what the search engine picks up-->
+<!-- <body> contains all site code -->
+
+
+
+<!-- 
+    Common declaration tags
+<a> for link. a stands for anchor
+<u> for underline
+<b> to make bold text
+<strong> for bold text with emphasys
+<body> main HTML part
+<br> for break (newline) (Don't beed to close it)
+<div> it is a division or part of an HTML document
+<h1>... for titles
+<i> to make an italic text
+<img> for images in document
+<ol> is an ordered list (numbered)
+    <li> is a list item in bulleted (ordered list)
+<ul> for an unordered list (bullets)
+<p> for paragraph
+<span> to style part of text
+
+
+ -->
+
+<!DOCTYPE html>
+<html>
+<h1>H1 = Biggest header tab, goes all the way down in size to 10</h1>
+
+
+<head>
+    <title> My test html learning</title> <!-- Apears on tab name-->
+    <link rel= 'stylesheet' href = './learnhtml.css'/> <!-- Link css page used on these elements. rel = relationship-->
+
+    <!-- Link to common css data api online to access their pre coded classes-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" 
+    integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Add the .pure-img class name to an <img> element to make it scale with the viewport. 
+        This is handy when building responsive websites.-->
+
+</head>
+<!-- Trial list-->
+<ol >
+    <li>Biggest</li>
+    <li>header</li>
+    <li>tab</li>
+    <li>goes</li>
+    <li>all</li>
+</ol>
+
+<!-- Trial link -->
+<!-- Using href hypertext reference. Where to send someone. -->
+<!-- 
+    cd / goes to current directory
+    cd . . To shift one level above the current directory, we input .. as the argument
+    ./ means use the same path and then the new page name
+-->
+<a href="./linkedpage.html"> Create a link </a>
+
+<!-- Trial image 
+    (SAME FOR ALL MEDIA FILES). 
+Just need source folder and to add some formatting -->
+<!-- Specifying width and height before means the webpage can create a box for the image 
+    to go before it is loaded -->
+
+<!-- alt tag reads to blind people what the image would be, or what it is when not loaded yet-->
+<img src="./convie_icon.png" width='400' height='500' alt='Convie Van'>
+<!-- Note: When adding rigid pixel sizes, it will be inflexible to screen adjustment sizes -->
+
+<!-- Trial video 
+Just need source folder ADD CONTROLS to play/pause and type='video/mp4'-->
+
+<video src="./nelson.mp4" controls type='video/mp4' width='400' height='500' alt='Grant poker stream'>> </video>
+<!--    Funky video controls 
+autoplay	autoplay	Specifies that the video will start playing as soon as it is ready
+controls	controls	Specifies that video controls should be displayed (such as a play/pause button etc).
+loop	loop	Specifies that the video will start over again, every time it is finished
+muted	muted	Specifies that the audio output of the video should be muted
+poster	URL	Specifies an image to be shown while the video is downloading, or until the user hits the play button
+preload	Specifies if and how the author thinks the video should be loaded when the page loads
+src	URL	Specifies the URL of the video file
+width	pixels	Sets the width of the video player
+height	pixels	Sets the height of the video player-->
+
+<!-- Insert table-->
+<p>
+<table border="1">
+    <tr>
+        <!-- tr = table row-->
+        <th>Cookie</th> <!-- tr = table header-->
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>Choc</td> <!-- td = table data-->
+        <td>$3</td>
+    </tr>
+    <tr>
+        <td>Rasin</td>
+        <td>$2</td>
+    </tr>
+</table>
+</p>
+
+<!-- Insert form-->
+<form>
+    <label> Cookie Type</label>
+    <input name="Cookie Type"><br> <!-- name lets you know where the data is-->
+    <label> Quantity</label>
+    <input name="Quantity"><br>
+    <label> Date</label>
+    <input name="Date" type="date"><br> <!-- type = "date" Generates the calandar to select date-->
+    <button> Order </button><!-- type = "date" Generates the calandar to select date-->
+</form>
+
+<!-- Button info-->
+<!--
+autofocus	autofocus	Specifies that a button should automatically get focus when the page loads
+disabled	disabled	Specifies that a button should be disabled
+form	form_id	Specifies which form the button belongs to
+formaction	URL	Specifies where to send the form-data when a form is submitted. Only for type="submit"
+formenctype	application/x-www-form-urlencoded
+multipart/form-data
+text/plain	Specifies how form-data should be encoded before sending it to a server. Only for type="submit"
+formmethod	get
+post	Specifies how to send the form-data (which HTTP method to use). Only for type="submit"
+formnovalidate	formnovalidate	Specifies that the form-data should not be validated on submission. Only for type="submit"
+formtarget	_blank,_self,_parent, _top	Specifies where to display the response after submitting the form. Only for type="submit"
+name	name	Specifies a name for the button
+type	button, reset, submit	Specifies the type of button
+value	text	Specifies an initial value for the button-->
+
+
+
+<!-- Get google fonts, copy this example into the head
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+-->
+
+<!-- Span for colouring specific text
+Span can be used within a header or body eg 
+<h1> This is a <span class = "title"> Title </span>
+    Then in css can do .title {color: red}
+
+-->
+
+<script src="event.js"></script>
+</html>
